@@ -11,6 +11,7 @@ class BankAccountsController < JSONAPI::ResourceController
         @zeroes = "000000000000"
         @padding = @zeroes.truncate(@zeroes.length-@number.length, omission: '')
         @acc.account_number = @padding + @number
+        @acc.save
         render json: @acc
         # render json: {"account_number": @acc.account_number}, status: 200
       else
