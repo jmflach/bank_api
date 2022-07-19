@@ -14,6 +14,12 @@ gem 'jsonapi-resources'
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
+gem "cpf_cnpj"
+
+gem "validates_timeliness"
+
+gem "validators"
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
