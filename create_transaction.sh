@@ -6,7 +6,7 @@ type=$3
 
 curl -o out.json -X POST \
   "http://localhost:3000/transactions/create" \
-  -F "bank_account=$account_number" \
+  -F "account_number=$account_number" \
   -F "amount=$amount" \
   -F "trans_type=$type"
 
