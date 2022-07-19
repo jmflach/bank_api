@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   post 'bank-accounts/create'
   post 'transactions/create'
+  get 'transactions/statement'
   jsonapi_resources :bank_accounts
   jsonapi_resources :transactions
 end

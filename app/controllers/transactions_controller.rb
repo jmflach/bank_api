@@ -2,8 +2,9 @@ class TransactionsController < JSONAPI::ResourceController
   skip_before_action :verify_authenticity_token
 
   def statement
-      @trans = Transaction.where(bank_account_id: '1')
-      render json: @trans, status: 200
+      @account_number = params[:account_number]
+      @aux = Transaction.joins(:bank_account).where(bank_account: {account_number: @account_number})
+      render json: @aux, status: 200
   end
 
 
