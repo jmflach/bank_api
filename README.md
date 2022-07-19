@@ -11,6 +11,7 @@ System requirements:
 - Ruby 2.7.2
 - Rails 7.0.3
 - Postgresql
+- active_storage (rails active_storage:install)
 - jsonapi
 - validates_timeliness
 - validators
