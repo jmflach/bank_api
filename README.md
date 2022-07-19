@@ -1,4 +1,4 @@
-# README
+# BANK_API
 
 This project was built as a test for an interview. The goal was to build an Ruby on Rails API with three end-points:
 
@@ -6,16 +6,11 @@ This project was built as a test for an interview. The goal was to build an Ruby
 - create_transaction: let you create transactions (credit or debit) for the bank accounts
 - list_transactions: let you list all the transactions that happened in a bank account
 
-Things you may want to cover:
+System requirements:
 
-* Ruby version
-
-Ruby 2.7.2
-Rails 7.0.3
-
-* System dependencies
-
-Postgresql
-jsonapi
-validates_timeliness
-validators
+- Ruby 2.7.2
+- Rails 7.0.3
+- Postgresql
+- jsonapi
+- validates_timeliness
+- validators
