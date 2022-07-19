@@ -20,7 +20,7 @@ class BankAccountsController < JSONAPI::ResourceController
    end
 
    def bank_param
-      params.permit(:name, :cpf, :birthday)
+      params.permit(:name, :cpf, :birthday, :doc_image)
    end
 
 end
