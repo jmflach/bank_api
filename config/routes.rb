@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  post 'bank-accounts/create'
   jsonapi_resources :bank_accounts
   jsonapi_resources :transactions
 end
