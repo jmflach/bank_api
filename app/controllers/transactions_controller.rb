@@ -1,12 +1,19 @@
 class TransactionsController < JSONAPI::ResourceController
   skip_before_action :verify_authenticity_token
 
+  def statement
+      @trans = Transaction.where(bank_account_id: '1')
+      render json: @trans, status: 200
+  end
+
+
   def create
-    @bank_account = params[:bank_account]
+    @account_number = params[:account_number]
     @amount = params[:amount].to_f
     @trans_type = params[:trans_type]
 
-    @acc = BankAccount.find_by_id(@bank_account)
+    @acc = BankAccount.find_by(account_number: @account_number)
+    # find_by_id(@bank_account)
 
     if @acc
       @original_balance = @acc.balance
