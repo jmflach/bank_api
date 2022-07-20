@@ -9,18 +9,29 @@ This project was built as a test for an interview. The goal was to build an Ruby
 Path and parameters to the endpoints:
 
 - localhost:3000/bank-accounts/create
+
   name
+
   cpf
+
   birthday
+
   doc_image
 
+
 - localhost:3000/transactions/create
+
   account_number
+
   amount
+
   trans_type (credit or debit)
 
+
 - localhost:3000/transactions/statement
+
   account_number
+
 
 You can also use the sh scripts provided with the parameters in the command line to send the requests. For example:
 
