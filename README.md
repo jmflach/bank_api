@@ -35,7 +35,7 @@ Path and parameters to the endpoints:
 
 You can also use the sh scripts provided with the parameters in the command line to send the requests. For example:
 
-./create_account Joao 04353814908 18/03/1993 @/home/João/avatar.png
+./create_account Joao 04353814908 18/03/1993 /home/João/avatar.png
 
 The cpf verification is disabled for testing.
 
