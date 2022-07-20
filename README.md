@@ -54,3 +54,4 @@ System requirements:
 - jsonapi
 - validates_timeliness
 - validators
+- jq (linux) to display beautiful json
