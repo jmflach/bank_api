@@ -10,7 +10,7 @@ Path to the endpoints:
 
 - localhost:3000/bank-accounts/create
 - localhost:3000/transactions/create
-- localhost:3000/transactions/list_transactions
+- localhost:3000/transactions/statement
 
 Todo:
 
